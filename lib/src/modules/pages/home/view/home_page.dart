@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:home_control/src/modules/pages/home/view/components/card_component_add.dart';
 import 'package:home_control/src/modules/pages/home/view/components/card_component_selection.dart';
 
 class HomePageView extends StatefulWidget {
@@ -85,42 +84,50 @@ class _HomePageViewState extends State<HomePageView> {
                     children: [
                       CardSelectionWidget(
                         url: "switchLed0",
-                        icon: Icons.remove_from_queue_outlined,
-                        text: 'Sala',
+                        icon: Icons.tv,
+                        text: 'Sala de Estar/Janta',
                         function: () {},
                       ),
                       CardSelectionWidget(
                         url: "switchLed1",
                         icon: Icons.bed,
-                        text: 'Quarto',
+                        text: 'Suíte',
                         function: () {},
                       ),
                       CardSelectionWidget(
                         url: "switchLed2",
-                        icon: Icons.kitchen,
-                        text: 'Cozinha',
+                        icon: Icons.balcony,
+                        text: 'Varanda',
                         function: () {},
                       ),
                       CardSelectionWidget(
                         url: "switchLed3",
-                        icon: Icons.abc,
-                        text: 'Sala',
+                        icon: Icons.garage_outlined,
+                        text: 'Garagem',
                         function: () {},
                       ),
                       CardSelectionWidget(
                         url: "switchLed4",
-                        icon: Icons.abc,
-                        text: 'Sala',
+                        icon: Icons.local_post_office_outlined,
+                        text: 'Escritório',
                         function: () {},
                       ),
                       CardSelectionWidget(
                         url: "switchLed5",
-                        icon: Icons.abc,
-                        text: 'Sala',
+                        icon: Icons.living_outlined,
+                        text: 'Frente',
                         function: () {},
                       ),
-                      const CardComponentAdd()
                     ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 25, vertical: 16),
+                    child: ElevatedButton.icon(
+                      icon: const Icon(Icons.add),
+                      label: const Text("Adicionar Dispositivo"),
+                      onPressed: () {},
+                    ),
                   )
                 ],
               )
