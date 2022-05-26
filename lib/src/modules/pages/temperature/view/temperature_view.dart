@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_control/src/modules/pages/temperature/controller/temperature_controller.dart';
+import 'package:lottie/lottie.dart';
 
 class TemperatureView extends StatefulWidget {
   const TemperatureView({Key? key}) : super(key: key);
@@ -48,10 +49,9 @@ class _TemperatureViewState extends State<TemperatureView> {
                                     MainAxisAlignment.spaceAround,
                                 children: [
                                   Row(
-                                    children: [
-                                      Text(
-                                        "${controller.temperatureData.temperature!.toStringAsFixed(1)} °C",
-                                        style: const TextStyle(
+                                    children:  [
+                                      Text("${controller.temperatureData.temperature!.toStringAsFixed(1)} °C",
+                                        style: TextStyle(
                                             fontStyle: FontStyle.italic,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 25),
@@ -61,7 +61,11 @@ class _TemperatureViewState extends State<TemperatureView> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      Image.asset("assets/images/temp.png"),
+                                      Lottie.asset(
+                                          "assets/images/temperature.json",
+                                          height: 80,
+                                          width: 100,
+                                          frameRate: FrameRate(120)),
                                     ],
                                   ),
                                   Row(
@@ -75,7 +79,7 @@ class _TemperatureViewState extends State<TemperatureView> {
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
                                       Text(
-                                        "${DateTime.now().hour}:${DateTime.now().minute.toStringAsFixed(0)}h",
+                                        "${DateTime.now().hour}:${DateTime.now().minute.toStringAsPrecision(2)}h",
                                       ),
                                     ],
                                   ),
@@ -95,10 +99,9 @@ class _TemperatureViewState extends State<TemperatureView> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Row(
-                                    children: [
-                                      Text(
-                                          "Pressão ${controller.temperatureData.pressure!.toStringAsFixed(2)} hPa *",
-                                          style: const TextStyle(
+                                    children:  [
+                                      Text( "Pressão ${controller.temperatureData.pressure!.toStringAsFixed(2)} hPa *",
+                                          style: TextStyle(
                                               fontStyle: FontStyle.italic,
                                               fontWeight: FontWeight.normal,
                                               fontSize: 20)),
@@ -107,13 +110,11 @@ class _TemperatureViewState extends State<TemperatureView> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      SizedBox(
-                                        height: 50,
-                                        width: 50,
-                                        child: Image.asset(
-                                          "assets/images/pressure.png",
-                                        ),
-                                      ),
+                                      Lottie.asset(
+                                          "assets/images/pressure.json",
+                                          height: 80,
+                                          width: 100,
+                                          frameRate: FrameRate(120)),
                                     ],
                                   )
                                 ],

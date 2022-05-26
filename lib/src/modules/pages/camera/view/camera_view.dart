@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_control/src/modules/pages/camera/easter_egg.dart';
 import 'package:home_control/src/modules/pages/camera/web_video.dart';
 
 class CameraView extends StatelessWidget {
@@ -44,7 +45,7 @@ class CameraView extends StatelessWidget {
         GestureDetector(
           onTap: () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Container()),
+            MaterialPageRoute(builder: (context) => const EasterEgg()),
           ),
           child: const ListTile(
             title: Text('Adicionar câmera'),
