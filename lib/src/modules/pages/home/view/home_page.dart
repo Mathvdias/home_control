@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_control/src/app/components/modal_banana.dart';
 import 'package:home_control/src/modules/pages/home/view/components/card_component_selection.dart';
 
 class HomePageView extends StatefulWidget {
@@ -126,7 +127,7 @@ class _HomePageViewState extends State<HomePageView> {
                     child: ElevatedButton.icon(
                       icon: const Icon(Icons.add),
                       label: const Text("Adicionar Dispositivo"),
-                      onPressed: () {},
+                      onPressed: () => modalGlobalBanana(context),
                     ),
                   )
                 ],

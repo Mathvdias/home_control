@@ -27,13 +27,9 @@ class WebViewCameraState extends State<WebViewCamera> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
-      body: SizedBox(
-        width: double.maxFinite,
-        height: 200,
-        child: WebView(
-          javascriptMode: JavascriptMode.unrestricted,
-          initialUrl: widget.url,
-        ),
+      body: WebView(
+        javascriptMode: JavascriptMode.unrestricted,
+        initialUrl: widget.url,
       ),
     );
   }

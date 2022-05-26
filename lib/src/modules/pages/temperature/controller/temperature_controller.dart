@@ -7,7 +7,7 @@ class TemperatureController extends ChangeNotifier {
 
   Future<CardTemperatureModel> getTemperature() async {
     var dio = Dio();
-    var url = "http://192.168.0.3:3000/sensorBme";
+    var url = "http://192.168.0.102:3000/sensorBme";
     var response = await dio.get(url);
 
     return CardTemperatureModel.fromJson(response.data);

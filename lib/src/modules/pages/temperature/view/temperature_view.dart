@@ -49,9 +49,10 @@ class _TemperatureViewState extends State<TemperatureView> {
                                     MainAxisAlignment.spaceAround,
                                 children: [
                                   Row(
-                                    children:  [
-                                      Text("${controller.temperatureData.temperature!.toStringAsFixed(1)} °C",
-                                        style: TextStyle(
+                                    children: [
+                                      Text(
+                                        "${controller.temperatureData.temperature!.toStringAsFixed(1)} °C",
+                                        style: const TextStyle(
                                             fontStyle: FontStyle.italic,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 25),
@@ -99,9 +100,10 @@ class _TemperatureViewState extends State<TemperatureView> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Row(
-                                    children:  [
-                                      Text( "Pressão ${controller.temperatureData.pressure!.toStringAsFixed(2)} hPa *",
-                                          style: TextStyle(
+                                    children: [
+                                      Text(
+                                          "Pressão ${controller.temperatureData.pressure!.toStringAsFixed(2)} hPa *",
+                                          style: const TextStyle(
                                               fontStyle: FontStyle.italic,
                                               fontWeight: FontWeight.normal,
                                               fontSize: 20)),
