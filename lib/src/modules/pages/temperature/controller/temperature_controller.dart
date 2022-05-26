@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:home_control/src/app/url_base.dart';
 import 'package:home_control/src/modules/pages/temperature/model/temperature_model.dart';
 
 class TemperatureController extends ChangeNotifier {
@@ -7,8 +8,8 @@ class TemperatureController extends ChangeNotifier {
 
   Future<CardTemperatureModel> getTemperature() async {
     var dio = Dio();
-    var url = "http://192.168.0.102:3000/sensorBme";
-    var response = await dio.get(url);
+    var url = "sensorBme";
+    var response = await dio.get("$raspberryHttpUrl$url");
 
     return CardTemperatureModel.fromJson(response.data);
   }

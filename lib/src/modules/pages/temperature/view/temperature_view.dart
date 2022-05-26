@@ -51,7 +51,7 @@ class _TemperatureViewState extends State<TemperatureView> {
                                   Row(
                                     children: [
                                       Text(
-                                        "${controller.temperatureData.temperature!.toStringAsFixed(1)} °C",
+                                        "${controller.temperatureData.temperature?.toStringAsFixed(1)} °C",
                                         style: const TextStyle(
                                             fontStyle: FontStyle.italic,
                                             fontWeight: FontWeight.w500,
@@ -102,7 +102,7 @@ class _TemperatureViewState extends State<TemperatureView> {
                                   Row(
                                     children: [
                                       Text(
-                                          "Pressão ${controller.temperatureData.pressure!.toStringAsFixed(2)} hPa *",
+                                          "Pressão ${controller.temperatureData.pressure?.toStringAsFixed(2)} hPa *",
                                           style: const TextStyle(
                                               fontStyle: FontStyle.italic,
                                               fontWeight: FontWeight.normal,
