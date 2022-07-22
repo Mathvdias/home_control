@@ -1,16 +1,21 @@
-# home_control
+# Home Control - APP usando conceitos de iOT 
 
-A new Flutter project.
+Um app para Controlar lampadas, monitorar temperatura, ajuste de temperatura, sistema de CFTV integrado entre outras novas Features!
 
-## Getting Started
+Link para o back end:  [Repo-Back End](https://github.com/Mathvdias/projeto)
 
-This project is a starting point for a Flutter application.
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+<h2 align="center">Layout 🎨</h2>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<div align="center">
+<img align="center" src="https://user-images.githubusercontent.com/74201503/180467345-efcb536b-69ab-4951-9005-71e96c766936.png" width="285" height="600"/>
+<img align="center" src="https://user-images.githubusercontent.com/74201503/180469554-2df97bf1-74a9-4dc8-a742-d770046eedc6.png" width="285" height="600"/>
+<img align="center" src="https://user-images.githubusercontent.com/74201503/180469680-22905281-fcbb-4de9-8628-3953df321755.png" width="285" height="600"/>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</div>
+<h2 align="center">O app foi feito utilizando: 📖</h2>
+<p>
+<h2>
+
+`Lottie`, `Material 3`, `MVC`.
